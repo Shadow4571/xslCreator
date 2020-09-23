@@ -6,6 +6,8 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.util.ArrayList;
 
 public class XSLFactory {
@@ -142,24 +144,14 @@ public class XSLFactory {
 
         this.FinalizeElementsForXSL(AllElements, RootXSL, ComplexXSL);
 
-        System.out.println(RootXSL);
+        //System.out.println(RootXSL);
 
-        /*
-        for(int i = 0; i < AllElements.getLength(); i++) {
-            Node Current = AllElements.item(i);
-
-            if(Current.getNodeType() != Node.TEXT_NODE) {
-                System.out.println(Current.getNodeName());
-                if (Current.hasAttributes()) {
-                    System.out.println("    WITH ATTRIBUTES:");
-                    NamedNodeMap Attributes = Current.getAttributes();
-
-                    for(int j = 0; j < Attributes.getLength(); j++) {
-                        System.out.println("    " + Attributes.item(j).getNodeName() + " : " + Attributes.item(j).getNodeValue());
-                    }
-                }
-            }
+        try {
+            BufferedWriter WriteFile = new BufferedWriter(new FileWriter("C:\\Users\\nmyznikov\\Documents\\ideaprojects\\xslCreator\\src\\main\\resources\\output.txt", true));
+            WriteFile.append(RootXSL.toString());
+            WriteFile.close();
+        } catch (Exception Exp) {
+            Exp.printStackTrace();
         }
-        */
     }
 }
