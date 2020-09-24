@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:app="http://www.roskazna.ru/eb/domain/common/applied" xmlns:cm="http://www.roskazna.ru/eb/domain/common" xmlns:eb="http://www.roskazna.ru/eb/domain/appinfo" xmlns:self="http://www.roskazna.ru/eb/domain/common/entity" targetNamespace="http://www.roskazna.ru/eb/domain/common/entity">
+  <import namespace="http://www.roskazna.ru/eb/domain/common/applied" schemaLocation="appliedTypes.xsd"/>
+  <import namespace="http://www.roskazna.ru/eb/domain/common" schemaLocation="common.xsd"/>
+  <complexType name="tEXEC_ITEM">
+    <sequence>
+      <element maxOccurs="1" minOccurs="0" name="Executor_Order" type="app:tText127"/>
+      <element maxOccurs="1" minOccurs="0" name="Executor_Dsc" type="app:tExecuteStateComplex"/>
+      <element maxOccurs="1" minOccurs="0" name="Executor_StartDate" type="app:tDateDoc"/>
+      <element maxOccurs="1" minOccurs="0" name="Executor_Username" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Executor_SFP" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Executor_Post" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Executor_Department" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Executor_State" type="app:tText250"/>
+      <element maxOccurs="1" minOccurs="0" name="Executor_Note" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Executor_Date" type="app:tDateDoc"/>
+      <element maxOccurs="1" minOccurs="0" name="ElectronicSign" type="app:tLogicalElement"/>
+    </sequence>
+  </complexType>
+  <complexType name="tAGR_ITEM">
+    <sequence>
+      <element maxOccurs="1" minOccurs="0" name="Agreer_Order" type="app:tText127"/>
+      <element maxOccurs="1" minOccurs="0" name="Agreer_Dsc" type="app:tmatching_stateComplex"/>
+      <element maxOccurs="1" minOccurs="0" name="Agreer_StartDate" type="app:tDateDoc"/>
+      <element maxOccurs="1" minOccurs="0" name="Agreer_Username" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Agreer_SFP" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Agreer_Post" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Agreer_Department" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Agreer_State" type="app:tText250"/>
+      <element maxOccurs="1" minOccurs="0" name="Agreer_Note" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Agreer_Date" type="app:tDateDoc"/>
+      <element maxOccurs="1" minOccurs="0" name="ElectronicSign" type="app:tLogicalElement"/>
+    </sequence>
+  </complexType>
+  <complexType name="tAPPACC_ITEM">
+    <sequence>
+      <element maxOccurs="1" minOccurs="0" name="Approver_Order" type="app:tText127"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_Dsc" type="app:tApprovementStateComplex"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_StartDate" type="app:tDateDoc"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_Username" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_SFP" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_Post" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_Department" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_State" type="app:tText250"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_Note" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_Date" type="app:tDateDoc"/>
+      <element maxOccurs="1" minOccurs="0" name="ElectronicSign" type="app:tLogicalElement"/>
+    </sequence>
+  </complexType>
+  <complexType name="tAPPFES_ITEM">
+    <sequence>
+      <element maxOccurs="1" minOccurs="0" name="Approver_Order" type="app:tText127"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_Dsc" type="app:tApprovementStateComplex"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_StartDate" type="app:tDateDoc"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_Username" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_SFP" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_Post" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_Department" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_State" type="app:tText250"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_Note" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_Date" type="app:tDateDoc"/>
+      <element maxOccurs="1" minOccurs="0" name="ElectronicSign" type="app:tLogicalElement"/>
+    </sequence>
+  </complexType>
+  <complexType name="tAPP_ITEM">
+    <sequence>
+      <element maxOccurs="1" minOccurs="0" name="Approver_Order" type="app:tText127"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_Dsc" type="app:tApprovementStateComplex"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_StartDate" type="app:tDateDoc"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_Username" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_SFP" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_Post" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_Department" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_State" type="app:tText250"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_Note" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="Approver_Date" type="app:tDateDoc"/>
+      <element maxOccurs="1" minOccurs="0" name="ElectronicSign" type="app:tLogicalElement"/>
+    </sequence>
+  </complexType>
+  <complexType name="tEXEC">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="EXEC_ITEM" type="self:tEXEC_ITEM"/>
+    </sequence>
+  </complexType>
+  <complexType name="tAGR">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="AGR_ITEM" type="self:tAGR_ITEM"/>
+    </sequence>
+  </complexType>
+  <complexType name="tAPPACC">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="APPACC_ITEM" type="self:tAPPACC_ITEM"/>
+    </sequence>
+  </complexType>
+  <complexType name="tAPPFES">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="APPFES_ITEM" type="self:tAPPFES_ITEM"/>
+    </sequence>
+  </complexType>
+  <complexType name="tAPP">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="APP_ITEM" type="self:tAPP_ITEM"/>
+    </sequence>
+  </complexType>
+  <complexType name="tListApproval">
+    <sequence>
+      <element maxOccurs="1" minOccurs="0" name="SkipAppr" type="app:tLogicalElement"/>
+      <element default="0" maxOccurs="1" minOccurs="0" name="AmountRowExecutor" type="app:tText4"/>
+      <element default="0" maxOccurs="1" minOccurs="0" name="AmountRowAgreer" type="app:tText4"/>
+      <element default="0" maxOccurs="1" minOccurs="0" name="AmountRowAppAcc" type="app:tText4"/>
+      <element default="0" maxOccurs="1" minOccurs="0" name="AmountRowAppFES" type="app:tText4"/>
+      <element default="0" maxOccurs="1" minOccurs="0" name="AmountRowApprover" type="app:tText4"/>
+      <element maxOccurs="1" minOccurs="0" name="LoginListExecutor" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="LoginListAgreer" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="LoginListAppAcc" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="LoginListAppFes" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="LoginListApprover" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="ApprovalStep" type="app:tApprovalStepComplex"/>
+      <element maxOccurs="1" minOccurs="0" name="EXEC" type="self:tEXEC"/>
+      <element maxOccurs="1" minOccurs="0" name="AGR" type="self:tAGR"/>
+      <element maxOccurs="1" minOccurs="0" name="APPACC" type="self:tAPPACC"/>
+      <element maxOccurs="1" minOccurs="0" name="APPFES" type="self:tAPPFES"/>
+      <element maxOccurs="1" minOccurs="0" name="APP" type="self:tAPP"/>
+    </sequence>
+  </complexType>
+  <complexType name="tListApprovalStandard">
+    <sequence>
+      <element maxOccurs="1" minOccurs="0" name="SkipAppr" type="app:tLogicalElement"/>
+      <element default="0" maxOccurs="1" minOccurs="0" name="AmountRowExecutor" type="app:tText4"/>
+      <element default="0" maxOccurs="1" minOccurs="0" name="AmountRowAgreer" type="app:tText4"/>
+      <element default="0" maxOccurs="1" minOccurs="0" name="AmountRowApprover" type="app:tText4"/>
+      <element maxOccurs="1" minOccurs="0" name="LoginListExecutor" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="LoginListAgreer" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="LoginListApprover" type="app:tText2000"/>
+      <element maxOccurs="1" minOccurs="0" name="EXEC" type="self:tEXEC"/>
+      <element maxOccurs="1" minOccurs="0" name="AGR" type="self:tAGR"/>
+      <element maxOccurs="1" minOccurs="0" name="APP" type="self:tAPP"/>
+    </sequence>
+  </complexType>
+</schema>

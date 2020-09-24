@@ -1,0 +1,2977 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:base="http://www.roskazna.ru/eb/domain/common/base" xmlns:cm="http://www.roskazna.ru/eb/domain/common" xmlns:eb="http://www.roskazna.ru/eb/domain/appinfo" xmlns:self="http://www.roskazna.ru/eb/domain/common/applied" targetNamespace="http://www.roskazna.ru/eb/domain/common/applied">
+  <import namespace="http://www.roskazna.ru/eb/domain/common/base" schemaLocation="baseTypes.xsd"/>
+  <import namespace="http://www.roskazna.ru/eb/domain/common" schemaLocation="common.xsd"/>
+  <simpleType name="tText15">
+    <restriction base="base:tText_15"/>
+  </simpleType>
+  <simpleType name="tText8">
+    <restriction base="base:tText_8"/>
+  </simpleType>
+  <simpleType name="tText14">
+    <restriction base="base:tText_14"/>
+  </simpleType>
+  <simpleType name="tText1">
+    <restriction base="base:tText_1"/>
+  </simpleType>
+  <simpleType name="tInteger4">
+    <restriction base="base:tInteger_4"/>
+  </simpleType>
+  <simpleType name="tLogicalElement">
+    <restriction base="base:tLogicElement"/>
+  </simpleType>
+  <simpleType name="tText4">
+    <restriction base="base:tText_4"/>
+  </simpleType>
+  <simpleType name="tText20">
+    <restriction base="base:tText_20"/>
+  </simpleType>
+  <simpleType name="tText200">
+    <restriction base="base:tText_200"/>
+  </simpleType>
+  <simpleType name="tText150">
+    <restriction base="base:tText_150"/>
+  </simpleType>
+  <simpleType name="tText10">
+    <restriction base="base:tText_10"/>
+  </simpleType>
+  <simpleType name="tDateDoc">
+    <restriction base="base:tDate"/>
+  </simpleType>
+  <simpleType name="tText2000">
+    <restriction base="base:tText_2000"/>
+  </simpleType>
+  <simpleType name="tSUMMA">
+    <restriction base="base:tSUMM"/>
+  </simpleType>
+  <simpleType name="tText11">
+    <restriction base="base:tText_11"/>
+  </simpleType>
+  <simpleType name="tText18">
+    <restriction base="base:tText_18"/>
+  </simpleType>
+  <simpleType name="tText50">
+    <restriction base="base:tText_50"/>
+  </simpleType>
+  <simpleType name="tText36">
+    <restriction base="base:tText_36"/>
+  </simpleType>
+  <simpleType name="tText512">
+    <restriction base="base:tText_512"/>
+  </simpleType>
+  <simpleType name="tText100">
+    <restriction base="base:tText_100"/>
+  </simpleType>
+  <simpleType name="tText2">
+    <restriction base="base:tText_2"/>
+  </simpleType>
+  <simpleType name="tText9">
+    <restriction base="base:tText_9"/>
+  </simpleType>
+  <simpleType name="tText12">
+    <restriction base="base:tText_12"/>
+  </simpleType>
+  <simpleType name="tText160">
+    <restriction base="base:tText_160"/>
+  </simpleType>
+  <simpleType name="tText25">
+    <restriction base="base:tText_25"/>
+  </simpleType>
+  <simpleType name="tText210">
+    <restriction base="base:tText_210"/>
+  </simpleType>
+  <simpleType name="tText3">
+    <restriction base="base:tText_3"/>
+  </simpleType>
+  <simpleType name="tText30">
+    <restriction base="base:tText_30"/>
+  </simpleType>
+  <simpleType name="tText255">
+    <restriction base="base:tText_255"/>
+  </simpleType>
+  <simpleType name="tText6">
+    <restriction base="base:tText_6"/>
+  </simpleType>
+  <simpleType name="tText240">
+    <restriction base="base:tText_240"/>
+  </simpleType>
+  <simpleType name="tText7">
+    <restriction base="base:tText_7"/>
+  </simpleType>
+  <simpleType name="tText140">
+    <restriction base="base:tText_140"/>
+  </simpleType>
+  <simpleType name="tText250">
+    <restriction base="base:tText_250"/>
+  </simpleType>
+  <simpleType name="tDateTime">
+    <restriction base="base:tDate_Time"/>
+  </simpleType>
+  <simpleType name="tText1M">
+    <restriction base="base:tText_1M"/>
+  </simpleType>
+  <simpleType name="tText10000">
+    <restriction base="base:tText_10000"/>
+  </simpleType>
+  <simpleType name="tText127">
+    <restriction base="base:tText_127"/>
+  </simpleType>
+  <simpleType name="tText4000">
+    <restriction base="base:tText_4000"/>
+  </simpleType>
+  <simpleType name="tText300">
+    <restriction base="base:tText_300"/>
+  </simpleType>
+  <simpleType name="tText5">
+    <restriction base="base:tText_5"/>
+  </simpleType>
+  <simpleType name="tText26">
+    <restriction base="base:tText_26"/>
+  </simpleType>
+  <simpleType name="tText22">
+    <restriction base="base:tText_22"/>
+  </simpleType>
+  <simpleType name="tAttach_link">
+    <restriction base="base:tLink_Of_Attach"/>
+  </simpleType>
+  <simpleType name="tProcent">
+    <restriction base="base:tPROCENT"/>
+  </simpleType>
+  <simpleType name="tUUID">
+    <restriction base="cm:tGuid"/>
+  </simpleType>
+  <simpleType name="tText19">
+    <restriction base="base:tText_19"/>
+  </simpleType>
+  <simpleType name="tmax500Text">
+    <restriction base="base:tMax500Text"/>
+  </simpleType>
+  <simpleType name="tText24">
+    <restriction base="base:tText_24"/>
+  </simpleType>
+  <simpleType name="tSUMM_5_2">
+    <restriction base="base:tSumma_5_2"/>
+  </simpleType>
+  <simpleType name="tText13">
+    <restriction base="base:tText_13"/>
+  </simpleType>
+  <simpleType name="tDigts_7">
+    <restriction base="base:tDigts_7"/>
+  </simpleType>
+  <simpleType name="tText4_4">
+    <restriction base="base:tText4_4"/>
+  </simpleType>
+  <simpleType name="tInteger18">
+    <restriction base="base:tInteger_18"/>
+  </simpleType>
+  <simpleType name="tText40">
+    <restriction base="base:tText_40"/>
+  </simpleType>
+  <simpleType name="tText34">
+    <restriction base="base:tText_34"/>
+  </simpleType>
+  <simpleType name="tText1000">
+    <restriction base="base:tText_1000"/>
+  </simpleType>
+  <simpleType name="tText2_2">
+    <restriction base="base:tText2_2"/>
+  </simpleType>
+  <simpleType name="ttext_35">
+    <restriction base="base:tText_35"/>
+  </simpleType>
+  <simpleType name="ttext_16">
+    <restriction base="base:tText_16"/>
+  </simpleType>
+  <simpleType name="ttext_70">
+    <restriction base="base:tText_70"/>
+  </simpleType>
+  <simpleType name="ttext_32">
+    <restriction base="base:tText_32"/>
+  </simpleType>
+  <simpleType name="tText254">
+    <restriction base="base:tText_254"/>
+  </simpleType>
+  <simpleType name="ttext_256">
+    <restriction base="base:tText_256"/>
+  </simpleType>
+  <simpleType name="tText_700">
+    <restriction base="base:tText_700"/>
+  </simpleType>
+  <simpleType name="tText21">
+    <restriction base="base:tText_21"/>
+  </simpleType>
+  <simpleType name="tInteger20">
+    <restriction base="base:tInteger20"/>
+  </simpleType>
+  <simpleType name="tSumma">
+    <restriction base="base:tSum4_2"/>
+  </simpleType>
+  <simpleType name="tAdvancePayment">
+    <restriction base="base:tSumm20_2"/>
+  </simpleType>
+  <simpleType name="tPaySum">
+    <restriction base="base:tSumm20_2"/>
+  </simpleType>
+  <complexType mixed="true" name="tAppSolDocTypComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tAppSolDocTyp"/>
+  </complexType>
+  <simpleType name="tAppSolDocTyp">
+    <restriction base="string">
+      <enumeration value="Сведения о соглашени/об изменении соглашении">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Lit1</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Сведения о БО">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Lit2</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Сведения о ДО">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Lit3</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Решение">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Lit4</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Протокол">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Lit5</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tDecision_TypeDocComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tDecision_TypeDoc"/>
+  </complexType>
+  <simpleType name="tDecision_TypeDoc">
+    <restriction base="string">
+      <enumeration value="Сведения о соглашении и БО">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit1</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Сведения о БО и ГК">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit2</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Сведения о БО">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit3</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Сведения о ДО">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit4</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Информация об отчетности">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit5</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Уведомление об уточнении операций клиента">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>UK</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Платежное поручение">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>PP</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tmatching_stateComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tmatching_state"/>
+  </complexType>
+  <simpleType name="tmatching_state">
+    <restriction base="string">
+      <enumeration value="Решение не сформировано">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>notFormed</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Требует согласования">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>requiresAgreement</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Направлен на согласование">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>sentForAgreement</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Не требует согласования">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>notRequiresAgreement</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Согласовано">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>agreed</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Не согласовано">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>disagreed</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tAgreementStateComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tAgreementState"/>
+  </complexType>
+  <simpleType name="tAgreementState">
+    <restriction base="string">
+      <enumeration value="На согласовании">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>sentForAgreement</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Согласовано">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>agreed</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Отклонено">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>disagreed</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tApprovementStateComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tApprovementState"/>
+  </complexType>
+  <simpleType name="tApprovementState">
+    <restriction base="string">
+      <enumeration value="На утверждении">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>sentForAgreement</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Утверждено">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>agreed</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Отклонено">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>disagreed</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tExecuteStateComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tExecuteState"/>
+  </complexType>
+  <simpleType name="tExecuteState">
+    <restriction base="string">
+      <enumeration value="На исполнении">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>sentForAgreement</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Исполнено">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>agreed</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Отклонено">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>disagreed</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tDocSrcComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tDocSrc"/>
+  </complexType>
+  <simpleType name="tDocSrc">
+    <restriction base="string">
+      <enumeration value="Подсистема управления расходами">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>PUR</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Подсистема управления закупками">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>PUZ</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Бюджетное планирование">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>BP</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="АСФК">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ASFK</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="ГАСУ">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>GASU</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="ИС клиента">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ES</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Мигрирован">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>MGR</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="СУФД">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>SUFD</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="ПФХД">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>PFHD</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="ПУР КС">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>PURKS</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="ПУР НУБП">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>PURNUBP</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="ПУР АУ/БУ">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>INC</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tFlgYorNComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tFlgYorN"/>
+  </complexType>
+  <simpleType name="tFlgYorN">
+    <restriction base="string">
+      <enumeration value="Да">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Yes</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Нет">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>No</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tSecrLevelComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tSecrLevel"/>
+  </complexType>
+  <simpleType name="tSecrLevel">
+    <restriction base="string">
+      <enumeration value="Не секретно">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>L0</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Секретно">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>L2</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="ДСП">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>L1</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="совершенно секретно">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>L3</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tTrnsfrStComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tTrnsfrSt"/>
+  </complexType>
+  <simpleType name="tTrnsfrSt">
+    <restriction base="string">
+      <enumeration value="Отправляется">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Send</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Отправлен">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Sent</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Ошибка отправки">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ErrorSend</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Доставлен">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Delivered</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Ошибка доставки">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Undelivered</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Принят">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ReceivedFromBP</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Принят из АСФК">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ReceivedFromASFK</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Отправка в АСФК не требуется">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>SendNotRequired</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Требуется отправка в АСФК">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>SendRequired</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Обработан">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Processed</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Отправляется в НСИ">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>SendToNSI</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Отправлен в НСИ">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>SentToNSI</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Ошибка отправки в НСИ">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ErrorSendToNSI</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Доставлен в НСИ">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>DeliveredToNSI</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Ошибка доставки в НСИ">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>UndeliveredToNSI</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Обработан в НСИ">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ProcessedToNSI</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Ошибка обработки в НСИ">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>NotProcessedToNSI</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Принят из ВС">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ReceivedFromES</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Отправляется в ВС">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>SendToES</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Отправлен в ВС">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>SentToES</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Ошибка отправки в ВС">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ErrorSendToES</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Доставлен в ВС">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>DeliveredToES</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Ошибка доставки в ВС">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>UndeliveredToES</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Обработан в ВС">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ProcessedInES</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Отправляется в БП">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>SendToBP</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Отправлен в БП">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>SentToBP</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Ошибка отправки в БП">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ErrorSentToBP</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Обработан в БП">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ProcessedToBP</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Ошибка обработки в БП">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ErrorProcessedToBP</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Отправка в БП не требуется">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>SentToBPNotRequired</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Доставлен в БП">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>DeliveredToBP</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Ошибка доставки в БП">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>UndeliveredToBP</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Отправляется в ЕИС">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>SendToEIS</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Отправлен в ЕИС">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>SentToEIS</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Ожидает отправки">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>PendSubmis</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Ошибка отправки в ЕИС">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ErrorSentToEIS</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Ошибка обработки в ЕИС">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ErrorProcessedToEIS</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Обработан в ЕИС">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ProcessedToEIS</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Принят из ПФХД">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ReceivedFromPFHD</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Принят из СУФД">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ReceivedFromSUFD</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Отправляется в ПУДС">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>SendToFam</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Отправлен в ПУДС">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>SentToFam</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Ошибка отправки в ПУДС">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ErrorSendToFAM</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Доставлен в ПУДС">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>DeliveredToFAM</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Ошибка доставки в ПУДС">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>UndeliveredToFAM</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Обработан ПУДС">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ProcessedToFAM</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Отправка в ПУДС не требуется">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>SentToFAMNotRequired</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Отправляется в АСФК">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>SendToASFK</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Отправлен в АСФК">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>SentToASFK</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Ошибка отправки в АСФК">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ErrorSendToASFK</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Доставлен в АСФК">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>DeliveredToASFK</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Ошибка доставки в АСФК">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>UndeliveredToASFK</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Обработан в АСФК">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ProcessedToASFK</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tClntStateComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tClntState"/>
+  </complexType>
+  <simpleType name="tClntState">
+    <restriction base="string">
+      <enumeration value="Черновик">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>CREATED</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Новый">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>NEWDOC</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Проверен">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>CHECKED</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="На исполнении">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>EXECUTING</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Утвержден">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>APPROVED</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="На утверждении">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>APPROVING</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Согласован">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>AGREED</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="На согласовании">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>AGREEING</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="К отмене">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>TO_CANCEL</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Отменен">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>CANCELED</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Исполнен">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>EXECUTED</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Отозван">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>REVOKED</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Утвержден клиентом">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>CLIENT_APPROVE</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Отклонен клиентом">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>CLIENT_CANCELED</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="На доработке">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>EDITING</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Удален">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>DELETED</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Создан">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>NEWCREATED</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Не используется">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>not_use</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tDcmntTpComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tDcmntTp"/>
+  </complexType>
+  <simpleType name="tDcmntTp">
+    <restriction base="string">
+      <enumeration value="Задание">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Task</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Отчет">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Report</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Распределение">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Distr</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Соглашение">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Agreement</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tOperationTypeComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tOperationType"/>
+  </complexType>
+  <simpleType name="tOperationType">
+    <restriction base="string">
+      <enumeration value="Поступление">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l1</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Возврат поступлений">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l2</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Кассовый расход">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l3</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Восстановление кассового расхода">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l4</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tFAH_PeriodComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tFAH_Period"/>
+  </complexType>
+  <simpleType name="tFAH_Period">
+    <restriction base="string">
+      <enumeration value="Текущий год">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>period1</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Первый год планового периода">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>period2</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Второй год планового периода">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>period3</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Третий год планового периода">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>period4</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Прочие">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>period5</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tApprovalStageComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tApprovalStage"/>
+  </complexType>
+  <simpleType name="tApprovalStage">
+    <restriction base="string">
+      <enumeration value="Клиент">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>UL1</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="ТОФК">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>TOFK_FO1</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tApprovalParticipantComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tApprovalParticipant"/>
+  </complexType>
+  <simpleType name="tApprovalParticipant">
+    <restriction base="string">
+      <enumeration value="Исполнитель">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Execution</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Согласующий">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Agreement</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Главный Бухгалтер">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ApprovalAcc</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Руководитель ФЭС">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ApprovalFes</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Руководитель">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Approval</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tApprovalStepComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tApprovalStep"/>
+  </complexType>
+  <simpleType name="tApprovalStep">
+    <restriction base="string">
+      <enumeration value="Утверждение руководителем">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ApprovementHead</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Утверждение главным бухгалтером">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ApprovementAcc</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Утверждение руководителем ФЭС">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ApprovementFES</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tSysReceiverComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tSysReceiver"/>
+  </complexType>
+  <simpleType name="tSysReceiver">
+    <restriction base="string">
+      <enumeration value="Подсистема управления расходами в части казначейского сопровождения">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>TSE</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Подсистема управления денежными средствами">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>FAM</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Подсистема учета и отчетности">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ARP</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Подсистема управления расходами">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>EXP</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Подсистема управления доходами">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>REV</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Автоматизированная система ФК">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ASFK</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tPayKindComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tPayKind"/>
+  </complexType>
+  <simpleType name="tPayKind">
+    <restriction base="string">
+      <enumeration value="Пусто">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Empty</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Срочно">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Urgently</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tInfoTSTypeComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tInfoTSType"/>
+  </complexType>
+  <simpleType name="tInfoTSType">
+    <restriction base="string">
+      <enumeration value="Санкционирование АУ/БУ">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>AuthorizeAUBU</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Санкционирование ФГУП">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>AuthorizeFGUP</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Санкционирование ЮЛ">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>AuthorizeUL</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tInfoTSKindComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tInfoTSKind"/>
+  </complexType>
+  <simpleType name="tInfoTSKind">
+    <restriction base="string">
+      <enumeration value="Полные">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Full</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Измененные">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Changed</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tLampFKComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tLampFK"/>
+  </complexType>
+  <simpleType name="tLampFK">
+    <restriction base="string">
+      <enumeration value="проверка не выполнялась">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l1</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="на проверке">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l2</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="проверка пройдена">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l3</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="проверка не пройдена">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l4</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tLampBankComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tLampBank"/>
+  </complexType>
+  <simpleType name="tLampBank">
+    <restriction base="string">
+      <enumeration value="не направлялся">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l1</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="направлен">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l2</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="получено подтверждение">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l3</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="отказан">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l4</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="не требует отправки">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l5</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="исполнен частично">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l6</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tLampPUIOComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tLampPUIO"/>
+  </complexType>
+  <simpleType name="tLampPUIO">
+    <restriction base="string">
+      <enumeration value="не производилась">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l1</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="ожидает результата">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l2</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="успешно">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l3</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="ошибка">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l4</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="не требуется">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l5</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tListOperatorComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tListOperator"/>
+  </complexType>
+  <simpleType name="tListOperator">
+    <restriction base="string">
+      <enumeration value="Равно">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>OperEqual</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Содержит">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>OperContains</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tMarkPrePayComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tMarkPrePay"/>
+  </complexType>
+  <simpleType name="tMarkPrePay">
+    <restriction base="string">
+      <enumeration value="Нет">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>NotPrePay</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Да">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>PrePay</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tFundsTypeComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tFundsType"/>
+  </complexType>
+  <simpleType name="tFundsType">
+    <restriction base="string">
+      <enumeration value="средства бюджета">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>BudgetFunds</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="средства для финансирования мероприятий по оперативно-розыскной деятельности">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>OperSearchFunds</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="средства, поступающие во временное распоряжение казенных учреждений">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>TempFunds</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="средства юридических лиц">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>LegalFunds</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tSecrLevelForDictsComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tSecrLevelForDicts"/>
+  </complexType>
+  <simpleType name="tSecrLevelForDicts">
+    <restriction base="string">
+      <enumeration value="Не секретно">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>L0</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Секретно">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>L1</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tDocTypeD03Complex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tDocTypeD03"/>
+  </complexType>
+  <simpleType name="tDocTypeD03">
+    <restriction base="string">
+      <enumeration value="Заявка на кассовый расход">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ZKR</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Заявка на кассовый расход (сокращенная)">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ZKS</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Сводная заявка на кассовый расход (для уплаты налогов)">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ZSV</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Заявка на возврат">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>PZV</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Заявка на получение денежных средств, перечисляемых на карту">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ZNB</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Заявка на получение наличных денег">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ZNP</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Расшифровка сумм неиспользованных (внесенных через банкомат или пункт выдачи наличных денежных средств) средств">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>RKD</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Платежное поручение">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ZPP</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tMarkSourceComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tMarkSource"/>
+  </complexType>
+  <simpleType name="tMarkSource">
+    <restriction base="string">
+      <enumeration value="Выбытие">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Leaving</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Поступление">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Entrance</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tMarkPrintComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tMarkPrint"/>
+  </complexType>
+  <simpleType name="tMarkPrint">
+    <restriction base="string">
+      <enumeration value="1">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>DoPrint</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="0">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>DoNotPrint</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tDocBaseMarkComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tDocBaseMark"/>
+  </complexType>
+  <simpleType name="tDocBaseMark">
+    <restriction base="string">
+      <enumeration value="Основание платежа">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>PayReason</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Документ-основание">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>BaseDoc</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tLampFK_D02Complex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tLampFK_D02"/>
+  </complexType>
+  <simpleType name="tLampFK_D02">
+    <restriction base="string">
+      <enumeration value="документ сформирован">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l1</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="документ на согласовании">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l2</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="документ утвержден">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l3</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="документ отказан">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l4</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tLampFAMComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tLampFAM"/>
+  </complexType>
+  <simpleType name="tLampFAM">
+    <restriction base="string">
+      <enumeration value="не направлялся">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l1</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="направлен">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l2</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="получено подтверждение">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l3</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="отказано">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l4</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tTypeAdmissionComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tTypeAdmission"/>
+  </complexType>
+  <simpleType name="tTypeAdmission">
+    <restriction base="string">
+      <enumeration value="Классифицированное поступление">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>KDN</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Неклассифицированное поступление">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>NKP</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Восстановление кассового расхода">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>VKR</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tAccTypeKBKComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tAccTypeKBK"/>
+  </complexType>
+  <simpleType name="tAccTypeKBK">
+    <restriction base="string">
+      <enumeration value="Доходы">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Income</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Расходы">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Exps</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Поступления по источникам">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ReceiptsBySource</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Выплаты по источникам">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>PaymentsBySource</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tLEDGER_CODEComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tLEDGER_CODE"/>
+  </complexType>
+  <simpleType name="tLEDGER_CODE">
+    <restriction base="string">
+      <enumeration value="книга учета операций по лицевым счетам органа Федерального казначейства">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>FTOperLedger</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="книга органа Федерального казначейства по кассовому обслуживанию бюджета">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>FTExecLedger</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="книга органа Федерального казначейства по организации исполнения бюджета">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>FTOrgLedger</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tREQUEST_TYPEComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tREQUEST_TYPE"/>
+  </complexType>
+  <simpleType name="tREQUEST_TYPE">
+    <restriction base="string">
+      <enumeration value="Остатки только по завершенным проводкам (без проверки на наличие предварительных проводок)">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Posted</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Остатки только по завершенным проводкам (с проверкой на наличие предварительных проводок)">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>PostedWithCheck</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Остатки по завершенным и предварительным проводкам">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Unposted</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tTypeFillingsComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tTypeFillings"/>
+  </complexType>
+  <simpleType name="tTypeFillings">
+    <restriction base="string">
+      <enumeration value="Значение из реквизита формуляра">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Form</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Значение по таблице формуляра">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>FromTableDoc</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="По шаблону">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Template</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Выбранные значения">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Value</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Не заполнять">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>NotFill</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tDisplayComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tDisplay"/>
+  </complexType>
+  <simpleType name="tDisplay">
+    <restriction base="string">
+      <enumeration value="Да">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Y</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Нет">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>N</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tDocTypeComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tDocType"/>
+  </complexType>
+  <simpleType name="tDocType">
+    <restriction base="string">
+      <enumeration value="Входящий">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Inc</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Исходящий">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Out</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tEDTypeComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tEDType"/>
+  </complexType>
+  <simpleType name="tEDType">
+    <restriction base="string">
+      <enumeration value="Платежное поручение">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ED101</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Платежное поручение на общую сумму с реестром">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ED108</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Платежный ордер">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ED105</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Инкассовое поручение">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ED104</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tTypeKBKComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tTypeKBK"/>
+  </complexType>
+  <simpleType name="tTypeKBK">
+    <restriction base="string">
+      <enumeration value="Расходы">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Exps</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Доходы">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Income</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="ИВФДБ">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>IVFDB</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="ИВнФДБ">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>IVNFDB</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tSourceD02Complex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tSourceD02"/>
+  </complexType>
+  <simpleType name="tSourceD02">
+    <restriction base="string">
+      <enumeration value="ПУР">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>EXP</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="ПУР КС">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>TSE</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="ПУДС">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>FAM</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="АСФК">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ASFK</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="ЗОЗ">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>ZOZ</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="ПУР АУ/БУ">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>INC</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tViewOperD26Complex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tViewOperD26"/>
+  </complexType>
+  <simpleType name="tViewOperD26">
+    <restriction base="string">
+      <enumeration value="Взнос наличных">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l1</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Неиспользованные">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l2</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tFundsTypeD26Complex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tFundsTypeD26"/>
+  </complexType>
+  <simpleType name="tFundsTypeD26">
+    <restriction base="string">
+      <enumeration value="средства бюджета">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>BudgetFunds</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="средства для финансирования мероприятий по оперативно-розыскной деятельности">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>OperSearchFunds</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="средства, поступающие во временное распоряжение казенных учреждений">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>TempFunds</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="средства юридических лиц">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>LegalFunds</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="доходы от оказания получателями средств бюджета платных услуг">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>RevenuePaidServices</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="средства дополнительного бюджетного финансирования">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>AddBudgetFunds</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tSecrecyLevelComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tSecrecyLevel"/>
+  </complexType>
+  <simpleType name="tSecrecyLevel">
+    <restriction base="string">
+      <enumeration value="несекретно">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>L0</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="ДСП">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>L1</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="совершенно секретно">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>L3</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="секретно">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>L2</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tFundsTypeD07Complex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tFundsTypeD07"/>
+  </complexType>
+  <simpleType name="tFundsTypeD07">
+    <restriction base="string">
+      <enumeration value="средства бюджета">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>BudgetFunds</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="средства для финансирования мероприятий по оперативно-розыскной деятельности">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>OperSearchFunds</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="средства, поступающие во временное распоряжение казенных учреждений">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>TempFunds</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="средства юридических лиц">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>LegalFunds</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="средства дополнительного бюджетного финансирования">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>AddBudgetFunds</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tInfoLevelComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tInfoLevel"/>
+  </complexType>
+  <simpleType name="tInfoLevel">
+    <restriction base="string">
+      <enumeration value="1-Сведения, утвержденные органом-учредителем">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Level1</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="2-Сведения без учета операций, осуществляемых обособленными подразделениями">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Level2</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="3-Сведения для осуществления целевых расходов обособленным подразделением">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Level3</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tFTAS_D07Complex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tFTAS_D07"/>
+  </complexType>
+  <simpleType name="tFTAS_D07">
+    <restriction base="string">
+      <enumeration value="не направлялся на контроль в центр специализации ФК плательщика">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l1</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="на контроле центра специализации ФК плательщика">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l2</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="зарегистрирован центром специализации ФК плательщика">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l3</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="контроль центра специализации ФК плательщика не пройден">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l4</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="контроль центра специализации ФК плательщика не требуется (документ аннулирован)">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l5</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tReflectLCComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tReflectLC"/>
+  </complexType>
+  <simpleType name="tReflectLC">
+    <restriction base="string">
+      <enumeration value="нет отражения на л/с">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l1</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="отражено на л/с">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l3</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="ошибка при отражении на л/с">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l4</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="предварительно отражено на л/с">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l2</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tLampFK_D26Complex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tLampFK_D26"/>
+  </complexType>
+  <simpleType name="tLampFK_D26">
+    <restriction base="string">
+      <enumeration value="Проверка не производилась">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l1</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Принят к исполнению">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l2</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Документ исполнен">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l3</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Документ не прошел проверки">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l4</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tRequestCodeComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tRequestCode"/>
+  </complexType>
+  <simpleType name="tRequestCode">
+    <restriction base="string">
+      <enumeration value="01 - Уточните номер банковского (лицевого) счета получателя средств, поскольку указанный в распоряжении банковский (лицевой) счет получателя средств отсутствует">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit01</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="02 - Уточните значения реквизитов получателя средств">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit02</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="03 - Подтвердите отсутствие дублирования распоряжения с указанными реквизитами">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit03</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="04 - Подтвердите наименование плательщика">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit04</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="05 - Подтвердите наименование получателя средств">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit05</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="06 - Предоставьте информацию о клиенте кредитной организации - физическом лице, являющемся плательщиком по распоряжению с указанными реквизитами: ИНН либо адрес места жительства (регистрации) или места пребывания">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit06</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="07 - Подтвердите назначение платежа">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit07</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="08 - Подтвердите значение поля (полей) расчетного документа с указанным номером (номерами). Номер поля может принимать значения: 60, 61, 101 - 110">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit08</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="09 - Уточните (дополните) реквизиты, ошибочно указанные (отсутствующие) в ранее направленном распоряжении (в том числе в соответствии с требованиями статьи 7.2 Федерального закона 115-ФЗ)">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit09</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="10 - Просим вернуть ошибочно перечисленную сумму с указанием пояснений о причине просьбы о возврате денежных средств">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit10</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="11 - Просим информировать о зачислении денежных средств получателю средств">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit11</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="12 - Подтвердите значение реквизитов в записи реестра с номером из платежного поручения на общую сумму с реестром">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit12</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="13 - Уточните (дополните) ошибочно указанные (отсутствующие) реквизиты записи в реестре из ранее направленного платежного поручения на общую сумму с реестром">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit13</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="14 - Запрос информации, связанной с операциями с использованием платежных карт">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit14</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="15 - Уточните реквизиты платежной карты с указанным номером">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit15</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="16 - Уточните (дополните) реквизиты, ошибочно указанные (отсутствующие) в ранее направленном поручении банка">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit16</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="99 - Запрос, для которого не представляется возможным использование иных установленных кодов запроса">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit99</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tResponseCodeComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tResponseCode"/>
+  </complexType>
+  <simpleType name="tResponseCode">
+    <restriction base="string">
+      <enumeration value="01 - Правильность реквизитов получателя средств либо отсутствие дублирования распоряжения не могут быть подтверждены, сумма распоряжения с указанными реквизитами подлежит возврату">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit01</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="02 - Направляем правильные значения реквизитов получателя средств">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit02</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="03 - Подтверждаем отсутствие дублирования по распоряжению с указанными реквизитами">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit03</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="04 - Подтвержденное (уточненное) наименование плательщика">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit04</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="05 - Подтвержденное (уточненное) наименование получателя средств">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit05</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="06 - Сообщаем информацию о плательщике: ИНН либо адрес места жительства (регистрации) или места пребывания">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit06</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="07 - Подтвержденное (уточненное) назначение платежа">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit07</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="08 - Сообщаем значение поля (полей) расчетного документа с указанным номером (номерами). Номер поля может принимать значения: 60, 61, 101 - 110">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit08</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="09 - Подтверждение зачисления денежных средств на счет получателя средств">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit09</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="10 - Указанный в распоряжении номер банковского счета получателя средств закрыт. По просьбе получателя средств сообщаем новые банковские реквизиты данного получателя средств">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit10</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="11 - Сообщаем уточненные (дополненные) значения реквизита (реквизитов) распоряжения с указанным номером (номерами)">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit11</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="12 - Сообщаем уточненные (дополненные) значения реквизитов записи реестра с указанным номером из платежного поручения на общую сумму с реестром">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit12</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="13 - Сумма не возвращена по причине отсутствия согласия получателя средств после зачисления денежных средств получателю средств">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit13</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="14 - Сумма будет возвращена до зачисления денежных средств получателю средств">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit14</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="15 - Сумма будет возвращена (получено согласие получателя средств о возврате суммы)">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit15</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="16 - Информация по запросу, связанному с операциями с использованием платежных карт">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit16</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="17 - Уточняем реквизиты платежной карты с указанным номером">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit17</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="18 - Сообщаем уточненные (дополненные) значения реквизита (реквизитов) поручения банка с указанным номером (указанными номерами)">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit18</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="19 - Невозможно зачислить денежные средства по указанному в распоряжении">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit19</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="99 - Запрос, для которого не представляется возможным использование иных установленных кодов запроса">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>lit99</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tLampNSIComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tLampNSI"/>
+  </complexType>
+  <simpleType name="tLampNSI">
+    <restriction base="string">
+      <enumeration value="выгрузка не производилась">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l1</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="отправлены данные в НСИ">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l2</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="проверка не пройдена">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>l3</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tNameDocComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tNameDoc"/>
+  </complexType>
+  <simpleType name="tNameDoc">
+    <restriction base="string">
+      <enumeration value="Уведомление об уточнении операций клиента">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>name1</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Заявка на возврат">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>name2</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Заявка на кассовый расход">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>name3</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Платежное поручение">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>name4</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Расчетный документ">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>name5</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tCheckListComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tCheckList"/>
+  </complexType>
+  <simpleType name="tCheckList">
+    <restriction base="string">
+      <enumeration value="Пустое значение">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Empty</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Не пройден">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>N</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Пройден">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Y</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tReportTypeComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tReportType"/>
+  </complexType>
+  <simpleType name="tReportType">
+    <restriction base="string">
+      <enumeration value="Промежуточный">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Mid</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Итоговый">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>Tot</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tGenerMarkRepAccComplex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tGenerMarkRepAcc"/>
+  </complexType>
+  <simpleType name="tGenerMarkRepAcc">
+    <restriction base="string">
+      <enumeration value="ТОФК">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>L1</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Запрос">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>L2</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Клиент">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>L3</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Пакетное формирование">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>L4</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType mixed="true" name="tFundsTypeD08Complex">
+    <attribute name="code" type="NCName"/>
+    <attribute name="value" type="self:tFundsTypeD08"/>
+  </complexType>
+  <simpleType name="tFundsTypeD08">
+    <restriction base="string">
+      <enumeration value="средства бюджета">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>BudgetFunds</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="Средства дополнительного бюджетного финансирования">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>AddBudgetFunds</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="средства для финансирования мероприятий по оперативно-розыскной деятельности">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>OperSearchFunds</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+      <enumeration value="средства, поступающие во временное распоряжение казенных учреждений">
+        <annotation>
+          <appinfo source="http://www.roskazna.ru/eb/domain/appinfo">
+            <eb:ID>TempFunds</eb:ID>
+          </appinfo>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+</schema>
