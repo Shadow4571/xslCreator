@@ -1,344 +1,368 @@
 Element: TransCardMIRFL | Parse In: null | Type: tTransCardMIRFL
 Important: true Complex: true Root: true
-		==== INNER ELEMENTS IN TransCardMIRFL ====
-	Element: BasicRequisites_DocNum | Parse In: null | Type: tText15
-	Important: true Complex: false Root: false
-	-    -    -    -
-	Element: BasicRequisites_DocDate | Parse In: null | Type: tDateDoc
-	Important: true Complex: false Root: false
-	-    -    -    -
-	Element: BasicRequisites_DocGuid | Parse In: null | Type: tText36
-	Important: true Complex: false Root: false
-	-    -    -    -
-	Element: BasicInform_NameClient | Parse In: null | Type: tText2000
-	Important: true Complex: false Root: false
-	-    -    -    -
-	Element: BasicInform_CodeClient | Parse In: null | Type: tText8
-	Important: true Complex: false Root: false
-	-    -    -    -
-	Element: BasicInform_AccNum | Parse In: null | Type: tText11
-	Important: true Complex: false Root: false
-	-    -    -    -
-	Element: BasicInform_AccCode | Parse In: null | Type: tText2
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: BasicInform_NameFounder | Parse In: null | Type: tText2000
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: BasicInform_CodeBudFounder | Parse In: null | Type: tText8
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: BasicInform_CodeGLFounder | Parse In: null | Type: tText3
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: BasicInform_BudgetName | Parse In: null | Type: tText512
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: BasicInform_NameFO | Parse In: null | Type: tText2000
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: BasicInform_CodeFO | Parse In: null | Type: tText8
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: BasicInform_TOFKCode | Parse In: null | Type: tText4
-	Important: true Complex: false Root: false
-	-    -    -    -
-	Element: BasicInform_TOFKName | Parse In: null | Type: tText2000
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: BasicInform_NumObligation | Parse In: null | Type: tText19
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: BasicInform_BackupField1 | Parse In: null | Type: tText25
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: BasicInform_BackupField2 | Parse In: null | Type: tText25
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: BasicInform_BackupField3 | Parse In: null | Type: tText25
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: BasicInform_BackupField4 | Parse In: null | Type: tText50
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: BasicInform_Sum | Parse In: null | Type: tSUMMA
-	Important: true Complex: false Root: false
-	-    -    -    -
-	Element: BasicInform_TotalSum | Parse In: null | Type: tSUMMA
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: BasicInform_CodeFounder | Parse In: null | Type: tText8
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Payer_BankAcc | Parse In: null | Type: tText34
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Payer_CorrAcc | Parse In: null | Type: tText34
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Payer_BIK | Parse In: null | Type: tText9
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Payer_BankName | Parse In: null | Type: tText160
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Payer_INN | Parse In: null | Type: tText12
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Payer_KPP | Parse In: null | Type: tText9
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Payer_Name | Parse In: null | Type: tText160
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Recip_INN | Parse In: null | Type: tText12
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Recip_KPP | Parse In: null | Type: tText9
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Recip_Name | Parse In: null | Type: tText160
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Recip_BankAcc | Parse In: null | Type: tText34
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Recip_CorrAcc | Parse In: null | Type: tText34
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Recip_BIK | Parse In: null | Type: tText9
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Recip_BankName | Parse In: null | Type: tText160
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: TechRequisitesDoc_PaymentPriority | Parse In: null | Type: tText1
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: TechRequisitesDoc_PaymentType | Parse In: null | Type: tText1
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: TechRequisitesDoc_PurposeOfPayment | Parse In: null | Type: tText210
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Sign_Head_Position | Parse In: null | Type: tText100
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Sign_Head_FIO | Parse In: null | Type: tText50
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Sign_Head_DateSign | Parse In: null | Type: tDateDoc
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Sign_Acc_Position | Parse In: null | Type: tText100
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Sign_Acc_FIO | Parse In: null | Type: tText50
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Sign_Acc_DateSign | Parse In: null | Type: tDateDoc
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Sign_MarkTOFK_RegNum | Parse In: null | Type: tText15
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Sign_MarkTOFK_RegDate | Parse In: null | Type: tDateDoc
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Sign_MarkTOFK_ExecPosition | Parse In: null | Type: tText100
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Sign_MarkTOFK_ExecFIO | Parse In: null | Type: tText50
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: Sign_MarkTOFK_ExecPhone | Parse In: null | Type: tText50
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: AddInformation_CodeCS | Parse In: null | Type: tText4
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: AddInformation_CodeRC | Parse In: null | Type: tText4
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: AddInformation_CSAcc | Parse In: null | Type: tText4
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: AddInformation_DateOper | Parse In: null | Type: tDateDoc
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: AddInformation_DateOfAcc | Parse In: null | Type: tDateDoc
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: AddInformation_DateWriteOff | Parse In: null | Type: tDateDoc
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: AddInformation_DateEntrTOFK | Parse In: null | Type: tDateTime
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: SystemInformation_TOFKCodeAdress | Parse In: null | Type: tText4
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: SystemInformation_Source | Parse In: null | Type: tDocSrcComplex
-	Important: true Complex: false Root: false
-	-    -    -    -
-	Element: SystemInformation_TransferState | Parse In: null | Type: tTrnsfrStComplex
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: SystemInformation_protocolGuid | Parse In: null | Type: tText36
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: SystemInformation_protocolNum | Parse In: null | Type: tText15
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: SystemInformation_protocolDate | Parse In: null | Type: tDateDoc
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: SystemInformation_clnt_protocolGuid | Parse In: null | Type: tText36
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: SystemInformation_clnt_protocolNum | Parse In: null | Type: tText15
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: SystemInformation_clnt_protocolDate | Parse In: null | Type: tDateDoc
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: SystemInformation_ZOZGuid | Parse In: null | Type: tText36
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: SystemInformation_ZOZNum | Parse In: null | Type: tText15
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: SystemInformation_ZOZDate | Parse In: null | Type: tDateDoc
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: SystemInformation_EDIGuid | Parse In: null | Type: tText36
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: SystemInformation_EDINum | Parse In: null | Type: tText15
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: SystemInformation_EDIDate | Parse In: null | Type: tDateDoc
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: SystemInformation_LampGroupFK | Parse In: null | Type: tLampFKComplex
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: SystemInformation_LampGroupPUIO | Parse In: null | Type: tLampPUIOComplex
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: SystemInformation_LampGroupBank | Parse In: null | Type: tLampBankComplex
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: SystemInformation_clnt_LampGroupFK | Parse In: null | Type: tLampFKComplex
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: SystemInformation_clnt_LampGroupPUIO | Parse In: null | Type: tLampPUIOComplex
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: SystemInformation_clnt_LampGroupBank | Parse In: null | Type: tLampBankComplex
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: ListApprovalFK | Parse In: null | Type: tListApproval
-	Important: false Complex: false Root: false
-	-    -    -    -
-	Element: ListApproval | Parse In: null | Type: tListApproval
-	Important: false Complex: false Root: false
-	-    -    -    -
-	
-	Element: InfoAboutPayment | Parse In: null | Type: tInfoAboutPayment
-	Important: false Complex: true Root: false
-			==== INNER ELEMENTS IN InfoAboutPayment ====
-		Element: InfoAboutPayment_ITEM | Parse In: null | Type: tInfoAboutPayment_ITEM
-		Important: false Complex: true Root: false
-				==== INNER ELEMENTS IN InfoAboutPayment_ITEM ====
-			Element: NumLine | Parse In: null | Type: null
-			Important: true Complex: false Root: false
-			-    -    -    -
-			Element: NumBankCardMIR | Parse In: null | Type: null
-			Important: true Complex: false Root: false
-			-    -    -    -
-			Element: DateBirthDayPayed | Parse In: null | Type: null
-			Important: false Complex: false Root: false
-			-    -    -    -
-			Element: CodeTypePayment | Parse In: null | Type: null
-			Important: true Complex: false Root: false
-			-    -    -    -
-			Element: SummPayment | Parse In: null | Type: null
-			Important: true Complex: false Root: false
-			-    -    -    -
-			Element: RejectedNSPK | Parse In: null | Type: null
-			Important: false Complex: false Root: false
-			-    -    -    -
-			Element: CodeErrorInNSPK | Parse In: null | Type: null
-			Important: false Complex: false Root: false
-			-    -    -    -
-			Element: BackupField | Parse In: null | Type: null
-			Important: false Complex: false Root: false
-			-    -    -    -
-				==== INNER ELEMENTS END InfoAboutPayment_ITEM ====
-		-    -    -    -
-			==== INNER ELEMENTS END InfoAboutPayment ====
-	-    -    -    -
-	
-	Element: SummPaymentsKBK | Parse In: null | Type: tSummPaymentsKBK
-	Important: false Complex: true Root: false
-			==== INNER ELEMENTS IN SummPaymentsKBK ====
-		Element: SummPaymentsKBK_ITEM | Parse In: null | Type: tSummPaymentsKBK_ITEM
-		Important: false Complex: true Root: false
-				==== INNER ELEMENTS IN SummPaymentsKBK_ITEM ====
-			Element: NumLine_KBK | Parse In: null | Type: null
-			Important: true Complex: false Root: false
-			-    -    -    -
-			Element: CodeBughetTypes | Parse In: null | Type: null
-			Important: false Complex: false Root: false
-			-    -    -    -
-			Element: SummKBK | Parse In: null | Type: null
-			Important: true Complex: false Root: false
-			-    -    -    -
-			Element: TypesPayments | Parse In: null | Type: null
-			Important: false Complex: false Root: false
-			-    -    -    -
-			Element: TypesKBK | Parse In: null | Type: null
-			Important: false Complex: false Root: false
-			-    -    -    -
-			Element: RejectNSPK_KBK | Parse In: null | Type: null
-			Important: false Complex: false Root: false
-			-    -    -    -
-			Element: BackupFields5 | Parse In: null | Type: null
-			Important: false Complex: false Root: false
-			-    -    -    -
-				==== INNER ELEMENTS END SummPaymentsKBK_ITEM ====
+        ==== INNER ELEMENTS IN TransCardMIRFL ====
+    Element: BasicRequisites_DocNum | Parse In: null | Type: tText15
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: BasicRequisites_DocDate | Parse In: null | Type: tDateDoc
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: BasicRequisites_DocGuid | Parse In: null | Type: tText36
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: BasicInform_NameClient | Parse In: null | Type: tText2000
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: BasicInform_CodeClient | Parse In: null | Type: tText8
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: BasicInform_AccNum | Parse In: null | Type: tText11
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: BasicInform_AccCode | Parse In: null | Type: tText2
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: BasicInform_NameFounder | Parse In: null | Type: tText2000
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: BasicInform_CodeBudFounder | Parse In: null | Type: tText8
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: BasicInform_CodeGLFounder | Parse In: null | Type: tText3
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: BasicInform_BudgetName | Parse In: null | Type: tText512
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: BasicInform_NameFO | Parse In: null | Type: tText2000
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: BasicInform_CodeFO | Parse In: null | Type: tText8
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: BasicInform_TOFKCode | Parse In: null | Type: tText4
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: BasicInform_TOFKName | Parse In: null | Type: tText2000
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: BasicInform_NumObligation | Parse In: null | Type: tText19
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: BasicInform_BackupField1 | Parse In: null | Type: tText25
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: BasicInform_BackupField2 | Parse In: null | Type: tText25
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: BasicInform_BackupField3 | Parse In: null | Type: tText25
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: BasicInform_BackupField4 | Parse In: null | Type: tText50
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: BasicInform_Sum | Parse In: null | Type: tSUMMA
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: BasicInform_TotalSum | Parse In: null | Type: tSUMMA
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: BasicInform_CodeFounder | Parse In: null | Type: tText8
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Payer_BankAcc | Parse In: null | Type: tText34
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Payer_CorrAcc | Parse In: null | Type: tText34
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Payer_BIK | Parse In: null | Type: tText9
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Payer_BankName | Parse In: null | Type: tText160
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Payer_INN | Parse In: null | Type: tText12
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Payer_KPP | Parse In: null | Type: tText9
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Payer_Name | Parse In: null | Type: tText160
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Recip_INN | Parse In: null | Type: tText12
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Recip_KPP | Parse In: null | Type: tText9
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Recip_Name | Parse In: null | Type: tText160
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Recip_BankAcc | Parse In: null | Type: tText34
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Recip_CorrAcc | Parse In: null | Type: tText34
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Recip_BIK | Parse In: null | Type: tText9
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Recip_BankName | Parse In: null | Type: tText160
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: TechRequisitesDoc_PaymentPriority | Parse In: null | Type: tText1
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: TechRequisitesDoc_PaymentType | Parse In: null | Type: tText1
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: TechRequisitesDoc_PurposeOfPayment | Parse In: null | Type: tText210
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Sign_Head_Position | Parse In: null | Type: tText100
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Sign_Head_FIO | Parse In: null | Type: tText50
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Sign_Head_DateSign | Parse In: null | Type: tDateDoc
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Sign_Acc_Position | Parse In: null | Type: tText100
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Sign_Acc_FIO | Parse In: null | Type: tText50
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Sign_Acc_DateSign | Parse In: null | Type: tDateDoc
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Sign_MarkTOFK_RegNum | Parse In: null | Type: tText15
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Sign_MarkTOFK_RegDate | Parse In: null | Type: tDateDoc
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Sign_MarkTOFK_ExecPosition | Parse In: null | Type: tText100
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Sign_MarkTOFK_ExecFIO | Parse In: null | Type: tText50
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: Sign_MarkTOFK_ExecPhone | Parse In: null | Type: tText50
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: AddInformation_CodeCS | Parse In: null | Type: tText4
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: AddInformation_CodeRC | Parse In: null | Type: tText4
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: AddInformation_CSAcc | Parse In: null | Type: tText4
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: AddInformation_DateOper | Parse In: null | Type: tDateDoc
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: AddInformation_DateOfAcc | Parse In: null | Type: tDateDoc
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: AddInformation_DateWriteOff | Parse In: null | Type: tDateDoc
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: AddInformation_DateEntrTOFK | Parse In: null | Type: tDateTime
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: SystemInformation_TOFKCodeAdress | Parse In: null | Type: tText4
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: SystemInformation_Source | Parse In: null | Type: tDocSrcComplex
+    Important: false Complex: false Root: false
+        ATTRIBUTES:
+        Name: code | Value: null ( Important: true )
+        Name: value | Value: null ( Important: true )
+    -    -    -    -
+    Element: SystemInformation_TransferState | Parse In: null | Type: tTrnsfrStComplex
+    Important: false Complex: false Root: false
+        ATTRIBUTES:
+        Name: code | Value: null ( Important: true )
+        Name: value | Value: null ( Important: true )
+    -    -    -    -
+    Element: SystemInformation_protocolGuid | Parse In: null | Type: tText36
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: SystemInformation_protocolNum | Parse In: null | Type: tText15
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: SystemInformation_protocolDate | Parse In: null | Type: tDateDoc
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: SystemInformation_clnt_protocolGuid | Parse In: null | Type: tText36
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: SystemInformation_clnt_protocolNum | Parse In: null | Type: tText15
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: SystemInformation_clnt_protocolDate | Parse In: null | Type: tDateDoc
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: SystemInformation_ZOZGuid | Parse In: null | Type: tText36
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: SystemInformation_ZOZNum | Parse In: null | Type: tText15
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: SystemInformation_ZOZDate | Parse In: null | Type: tDateDoc
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: SystemInformation_EDIGuid | Parse In: null | Type: tText36
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: SystemInformation_EDINum | Parse In: null | Type: tText15
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: SystemInformation_EDIDate | Parse In: null | Type: tDateDoc
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: SystemInformation_LampGroupFK | Parse In: null | Type: tLampFKComplex
+    Important: false Complex: false Root: false
+        ATTRIBUTES:
+        Name: code | Value: null ( Important: true )
+        Name: value | Value: null ( Important: true )
+    -    -    -    -
+    Element: SystemInformation_LampGroupPUIO | Parse In: null | Type: tLampPUIOComplex
+    Important: false Complex: false Root: false
+        ATTRIBUTES:
+        Name: code | Value: null ( Important: true )
+        Name: value | Value: null ( Important: true )
+    -    -    -    -
+    Element: SystemInformation_LampGroupBank | Parse In: null | Type: tLampBankComplex
+    Important: false Complex: false Root: false
+        ATTRIBUTES:
+        Name: code | Value: null ( Important: true )
+        Name: value | Value: null ( Important: true )
+    -    -    -    -
+    Element: SystemInformation_clnt_LampGroupFK | Parse In: null | Type: tLampFKComplex
+    Important: false Complex: false Root: false
+        ATTRIBUTES:
+        Name: code | Value: null ( Important: true )
+        Name: value | Value: null ( Important: true )
+    -    -    -    -
+    Element: SystemInformation_clnt_LampGroupPUIO | Parse In: null | Type: tLampPUIOComplex
+    Important: false Complex: false Root: false
+        ATTRIBUTES:
+        Name: code | Value: null ( Important: true )
+        Name: value | Value: null ( Important: true )
+    -    -    -    -
+    Element: SystemInformation_clnt_LampGroupBank | Parse In: null | Type: tLampBankComplex
+    Important: false Complex: false Root: false
+        ATTRIBUTES:
+        Name: code | Value: null ( Important: true )
+        Name: value | Value: null ( Important: true )
+    -    -    -    -
+    Element: ListApprovalFK | Parse In: null | Type: tListApproval
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: ListApproval | Parse In: null | Type: tListApproval
+    Important: false Complex: false Root: false
+    -    -    -    -
+    Element: InfoPayment_D12 | Parse In: null | Type: tInfoPayment_D12
+    Important: false Complex: true Root: false
+            ==== INNER ELEMENTS IN InfoPayment_D12 ====
+        Element: InfoPayment_D12_ITEM | Parse In: null | Type: tInfoPayment_D12_ITEM
+        Important: false Complex: true Root: false
+                ==== INNER ELEMENTS IN InfoPayment_D12_ITEM ====
+            Element: NumLine | Parse In: null | Type: null
+            Important: false Complex: false Root: false
+            -    -    -    -
+            Element: NumBankCardMIR | Parse In: null | Type: null
+            Important: false Complex: false Root: false
+            -    -    -    -
+            Element: DateBirthDayPayed | Parse In: null | Type: null
+            Important: false Complex: false Root: false
+            -    -    -    -
+            Element: CodeTypePayment | Parse In: null | Type: null
+            Important: false Complex: false Root: false
+            -    -    -    -
+            Element: SummPayment | Parse In: null | Type: null
+            Important: false Complex: false Root: false
+            -    -    -    -
+            Element: RejectedNSPK | Parse In: null | Type: null
+            Important: false Complex: false Root: false
+            -    -    -    -
+            Element: CodeErrorInNSPK | Parse In: null | Type: null
+            Important: false Complex: false Root: false
+            -    -    -    -
+            Element: BackupField | Parse In: null | Type: null
+            Important: false Complex: false Root: false
+            -    -    -    -
+                ==== INNER ELEMENTS END InfoPayment_D12_ITEM ====
 
-		-    -    -    -
-			==== INNER ELEMENTS END SummPaymentsKBK ====
+        -    -    -    -
+            ==== INNER ELEMENTS END InfoPayment_D12 ====
 
-	-    -    -    -
-	Element: TotalPayoutAmounts | Parse In: null | Type: tTotalPayoutAmounts
-	Important: false Complex: true Root: false
-			==== INNER ELEMENTS IN TotalPayoutAmounts ====
-		Element: TotalPayoutAmounts_ITEM | Parse In: null | Type: tTotalPayoutAmounts_ITEM
-		Important: false Complex: true Root: false
-				==== INNER ELEMENTS IN TotalPayoutAmounts_ITEM ====
-			Element: CodeBughetTypesTotal | Parse In: null | Type: null
-			Important: false Complex: false Root: false
-			-    -    -    -
-			Element: SummKBKTotal | Parse In: null | Type: null
-			Important: true Complex: false Root: false
-			-    -    -    -
-			Element: AmountExecutionKBK | Parse In: null | Type: null
-			Important: false Complex: false Root: false
-			-    -    -    -
-			Element: AmountNoExecutionKBK | Parse In: null | Type: null
-			Important: false Complex: false Root: false
-			-    -    -    -
-			Element: BackupFields6 | Parse In: null | Type: null
-			Important: false Complex: false Root: false
-			-    -    -    -
-				==== INNER ELEMENTS END TotalPayoutAmounts_ITEM ====
+    -    -    -    -
+    Element: SumPaymKBK_D12 | Parse In: null | Type: tSumPaymKBK_D12
+    Important: false Complex: true Root: false
+            ==== INNER ELEMENTS IN SumPaymKBK_D12 ====
+        Element: SumPaymKBK_D12_ITEM | Parse In: null | Type: tSumPaymKBK_D12_ITEM
+        Important: false Complex: true Root: false
+                ==== INNER ELEMENTS IN SumPaymKBK_D12_ITEM ====
+            Element: NumLine_KBK | Parse In: null | Type: null
+            Important: false Complex: false Root: false
+            -    -    -    -
+            Element: CodeBughetTypes | Parse In: null | Type: null
+            Important: false Complex: false Root: false
+            -    -    -    -
+            Element: SummKBK | Parse In: null | Type: null
+            Important: false Complex: false Root: false
+            -    -    -    -
+            Element: TypesPayments | Parse In: null | Type: null
+            Important: false Complex: false Root: false
+            -    -    -    -
+            Element: TypesKBK | Parse In: null | Type: null
+            Important: false Complex: false Root: false
+            -    -    -    -
+            Element: RejectNSPK_KBK | Parse In: null | Type: null
+            Important: false Complex: false Root: false
+            -    -    -    -
+            Element: BackupFields5 | Parse In: null | Type: null
+            Important: false Complex: false Root: false
+            -    -    -    -
+                ==== INNER ELEMENTS END SumPaymKBK_D12_ITEM ====
 
-		-    -    -    -
-			==== INNER ELEMENTS END TotalPayoutAmounts ====
+        -    -    -    -
+            ==== INNER ELEMENTS END SumPaymKBK_D12 ====
 
-	-    -    -    -
-		==== INNER ELEMENTS END TransCardMIRFL ====
+    -    -    -    -
+    Element: TTLPayAmount_D12 | Parse In: null | Type: tTTLPayAmount_D12
+    Important: false Complex: true Root: false
+            ==== INNER ELEMENTS IN TTLPayAmount_D12 ====
+        Element: TTLPayAmount_D12_ITEM | Parse In: null | Type: tTTLPayAmount_D12_ITEM
+        Important: false Complex: true Root: false
+                ==== INNER ELEMENTS IN TTLPayAmount_D12_ITEM ====
+            Element: CodeBughetTypesTotal | Parse In: null | Type: null
+            Important: false Complex: false Root: false
+            -    -    -    -
+            Element: SummKBKTotal | Parse In: null | Type: null
+            Important: false Complex: false Root: false
+            -    -    -    -
+            Element: AmountExecutionKBK | Parse In: null | Type: null
+            Important: false Complex: false Root: false
+            -    -    -    -
+            Element: AmountNoExecutionKBK | Parse In: null | Type: null
+            Important: false Complex: false Root: false
+            -    -    -    -
+            Element: BackupFields6 | Parse In: null | Type: null
+            Important: false Complex: false Root: false
+            -    -    -    -
+                ==== INNER ELEMENTS END TTLPayAmount_D12_ITEM ====
+
+        -    -    -    -
+            ==== INNER ELEMENTS END TTLPayAmount_D12 ====
+
+    -    -    -    -
+        ==== INNER ELEMENTS END TransCardMIRFL ====
 

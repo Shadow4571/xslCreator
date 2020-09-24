@@ -70,6 +70,7 @@ public class XSLElement {
     }
 
     public ArrayList<XSLAttribute> GetAttributes() { return this.ElementAttributes; }
+    public void SetAttributes(ArrayList<XSLAttribute> ElementAttributes) { this.ElementAttributes = ElementAttributes; }
 
     @Override
     public String toString() {

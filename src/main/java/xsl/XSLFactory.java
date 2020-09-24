@@ -96,7 +96,10 @@ public class XSLFactory {
         for(int i = 0; i < XSLSequence.getLength(); i++) {
             if(XSLSequence.item(i).getNodeType() != Node.TEXT_NODE) {
                 String NodeName = XSLSequence.item(i).getAttributes().getNamedItem("name").getNodeValue();
-                String NodeType = XSLSequence.item(i).getAttributes().getNamedItem("type").getNodeValue().replace("app:", "").replace("en:", "").replace("self:", "").trim();
+                String TryType = XSLSequence.item(i).getAttributes().getNamedItem("type").getNodeValue();
+                String NodeType = TryType.replace("app:", "").replace("en:", "").replace("self:", "").trim();
+                String Prefix = TryType.substring(0, TryType.indexOf(':'));
+
                 boolean IsImportant = true;
 
                 if(XSLSequence.item(i).getAttributes().getNamedItem("minOccurs") != null) {
@@ -112,6 +115,11 @@ public class XSLFactory {
                     XSLElement Temp = ComplexXSL.get(Position);
                     Temp.Name = NodeName;
                     InnerRoot.add(Temp);
+                }
+
+                XSLElement ElementWithAttributes = this.SchemaFactory.FindTypeByPrefix(Prefix, NodeType, InnerRoot.get(InnerRoot.size() - 1).Name);
+                if(ElementWithAttributes != null) {
+                    InnerRoot.get(InnerRoot.size() - 1).SetAttributes(ElementWithAttributes.GetAttributes());
                 }
             }
         }

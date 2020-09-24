@@ -40,15 +40,15 @@ public class XSDFactory {
                     if(Temp.getAttributes().getNamedItem("name").getNodeValue().equalsIgnoreCase(Type)) {
                         XSLElement Result = new XSLElement(Name);
                         Result.Type = Type;
-
                         if(Temp.getNodeName().equalsIgnoreCase("complexType")) {
                             NodeList ResultInner = Temp.getChildNodes();
                             for(int j = 0; j < ResultInner.getLength(); j++) {
-                                Node InnerNode = ResultInner.item(i);
+                                Node InnerNode = ResultInner.item(j);
 
-                                if(InnerNode.getNodeType() != Node.TEXT_NODE)
-                                    if(InnerNode.getNodeName().equalsIgnoreCase("attribute"))
-                                        Result.AddElementAttribute(InnerNode.getAttributes().getNamedItem("name").getNodeValue(), InnerNode.getAttributes().getNamedItem("minOcurus") == null);
+                                if(InnerNode != null)
+                                    if(InnerNode.getNodeType() != Node.TEXT_NODE)
+                                        if(InnerNode.getNodeName().equalsIgnoreCase("attribute"))
+                                            Result.AddElementAttribute(InnerNode.getAttributes().getNamedItem("name").getNodeValue(), InnerNode.getAttributes().getNamedItem("minOcurus") == null);
                             }
                         }
 
