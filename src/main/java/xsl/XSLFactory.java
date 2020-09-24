@@ -5,24 +5,17 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import xsd.XSDFactory;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.util.ArrayList;
 
 public class XSLFactory {
-    private Document XSDSchema;
-    private Document XSLTransform;
+    private XSDFactory SchemaFactory;
 
-    public XSLFactory(Document XSDSchema) {
-        this.XSDSchema = XSDSchema;
-
-        try {
-            this.XSLTransform = FileLoader.CreateXSLDocument();
-        } catch (Exception Exp) {
-            this.XSLTransform = null;
-            Exp.printStackTrace();
-        }
+    public XSLFactory(XSDFactory SchemaFactory) {
+        this.SchemaFactory = SchemaFactory;
     }
 
     private XSLElement FindRootElementForXSL(NodeList ElementsInRoot) {
@@ -135,7 +128,7 @@ public class XSLFactory {
     }
 
     public void BuildXSLDocument() {
-        Node Root = this.XSDSchema.getDocumentElement();
+        Node Root = this.SchemaFactory.FormularsXSD.getDocumentElement();
 
         NodeList AllElements = Root.getChildNodes();
 
@@ -144,12 +137,12 @@ public class XSLFactory {
 
         this.FinalizeElementsForXSL(AllElements, RootXSL, ComplexXSL);
 
-        //System.out.println(RootXSL);
+        System.out.println(RootXSL);
 
         try {
-            BufferedWriter WriteFile = new BufferedWriter(new FileWriter("C:\\Users\\nmyznikov\\Documents\\ideaprojects\\xslCreator\\src\\main\\resources\\output.txt", true));
-            WriteFile.append(RootXSL.toString());
-            WriteFile.close();
+            //BufferedWriter WriteFile = new BufferedWriter(new FileWriter("C:\\Users\\nmyznikov\\Documents\\ideaprojects\\xslCreator\\src\\main\\resources\\output.txt", true));
+            //WriteFile.append(RootXSL.toString());
+            //WriteFile.close();
         } catch (Exception Exp) {
             Exp.printStackTrace();
         }

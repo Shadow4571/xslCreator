@@ -69,6 +69,8 @@ public class XSLElement {
         return this.ComplexElements;
     }
 
+    public ArrayList<XSLAttribute> GetAttributes() { return this.ElementAttributes; }
+
     @Override
     public String toString() {
         StringBuilder Message = new StringBuilder();

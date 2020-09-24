@@ -2,6 +2,7 @@ package xsl;
 
 public class XSLAttribute {
     public String Name;
+    public String ParseName;
     public String Value;
 
     public boolean IsImportant;
