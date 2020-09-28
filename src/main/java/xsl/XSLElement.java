@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class XSLElement {
     public String Name;
     public String ParseName;
+    public String TypePrefix;
     public String Type;
 
     public boolean IsImportant;
@@ -65,6 +66,8 @@ public class XSLElement {
         this.ElementAttributes.add(new XSLAttribute(Name, IsImportant));
     }
 
+    public void AddElementAttribute(XSLAttribute Attribute) { this.ElementAttributes.add(Attribute); }
+
     public ArrayList<XSLElement> GetElementsFromComplex() {
         return this.ComplexElements;
     }
@@ -75,7 +78,7 @@ public class XSLElement {
     @Override
     public String toString() {
         StringBuilder Message = new StringBuilder();
-        Message.append("Element: " + this.Name + " | Parse In: " + this.ParseName + " | Type: " + this.Type + "\n" +
+        Message.append("Element: " + this.Name + " | Parse In: " + this.ParseName + " | Type: " + this.Type + " Type Prefix: " + this.TypePrefix + "\n" +
                 "Important: " + this.IsImportant + " Complex: " + this.IsComplexType + " Root: " + this.IsRootElement + "\n");
 
         if(!this.ElementAttributes.isEmpty()) {

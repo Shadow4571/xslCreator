@@ -17,39 +17,9 @@
       <element maxOccurs="1" minOccurs="0" name="BackupField" type="app:tText2000"/>
     </sequence>
   </complexType>
-  <complexType name="tSumPaymKBK_D12_ITEM">
-    <sequence>
-      <element maxOccurs="1" minOccurs="0" name="NumLine_KBK" type="app:tInteger4"/>
-      <element maxOccurs="1" minOccurs="0" name="CodeBughetTypes" type="app:tText20"/>
-      <element maxOccurs="1" minOccurs="0" name="SummKBK" type="app:tSUMMA"/>
-      <element maxOccurs="1" minOccurs="0" name="TypesPayments" type="app:tText1"/>
-      <element maxOccurs="1" minOccurs="0" name="TypesKBK" type="app:tText1"/>
-      <element maxOccurs="1" minOccurs="0" name="RejectNSPK_KBK" type="app:tLogicalElement"/>
-      <element maxOccurs="1" minOccurs="0" name="BackupFields5" type="app:tText25"/>
-    </sequence>
-  </complexType>
-  <complexType name="tTTLPayAmount_D12_ITEM">
-    <sequence>
-      <element maxOccurs="1" minOccurs="0" name="CodeBughetTypesTotal" type="app:tText20"/>
-      <element maxOccurs="1" minOccurs="0" name="SummKBKTotal" type="app:tSUMMA"/>
-      <element maxOccurs="1" minOccurs="0" name="AmountExecutionKBK" type="app:tSUMMA"/>
-      <element maxOccurs="1" minOccurs="0" name="AmountNoExecutionKBK" type="app:tSUMMA"/>
-      <element maxOccurs="1" minOccurs="0" name="BackupFields6" type="app:tText25"/>
-    </sequence>
-  </complexType>
   <complexType name="tInfoPayment_D12">
     <sequence>
       <element maxOccurs="unbounded" minOccurs="0" name="InfoPayment_D12_ITEM" type="self:tInfoPayment_D12_ITEM"/>
-    </sequence>
-  </complexType>
-  <complexType name="tSumPaymKBK_D12">
-    <sequence>
-      <element maxOccurs="unbounded" minOccurs="0" name="SumPaymKBK_D12_ITEM" type="self:tSumPaymKBK_D12_ITEM"/>
-    </sequence>
-  </complexType>
-  <complexType name="tTTLPayAmount_D12">
-    <sequence>
-      <element maxOccurs="unbounded" minOccurs="0" name="TTLPayAmount_D12_ITEM" type="self:tTTLPayAmount_D12_ITEM"/>
     </sequence>
   </complexType>
   <complexType name="tTransCardMIRFL">
@@ -62,89 +32,8 @@
       <extension base="cm:tFormular">
         <sequence>
           <element maxOccurs="1" minOccurs="0" name="BasicRequisites_DocNum" type="app:tText15"/>
-          <element maxOccurs="1" minOccurs="0" name="BasicRequisites_DocDate" type="app:tDateDoc"/>
-          <element maxOccurs="1" minOccurs="0" name="BasicRequisites_DocGuid" type="app:tText36"/>
-          <element maxOccurs="1" minOccurs="0" name="BasicInform_NameClient" type="app:tText2000"/>
-          <element maxOccurs="1" minOccurs="0" name="BasicInform_CodeClient" type="app:tText8"/>
-          <element maxOccurs="1" minOccurs="0" name="BasicInform_AccNum" type="app:tText11"/>
-          <element maxOccurs="1" minOccurs="0" name="BasicInform_AccCode" type="app:tText2"/>
-          <element maxOccurs="1" minOccurs="0" name="BasicInform_NameFounder" type="app:tText2000"/>
-          <element maxOccurs="1" minOccurs="0" name="BasicInform_CodeBudFounder" type="app:tText8"/>
-          <element maxOccurs="1" minOccurs="0" name="BasicInform_CodeGLFounder" type="app:tText3"/>
-          <element maxOccurs="1" minOccurs="0" name="BasicInform_BudgetName" type="app:tText512"/>
-          <element maxOccurs="1" minOccurs="0" name="BasicInform_NameFO" type="app:tText2000"/>
-          <element maxOccurs="1" minOccurs="0" name="BasicInform_CodeFO" type="app:tText8"/>
-          <element maxOccurs="1" minOccurs="0" name="BasicInform_TOFKCode" type="app:tText4"/>
-          <element maxOccurs="1" minOccurs="0" name="BasicInform_TOFKName" type="app:tText2000"/>
-          <element maxOccurs="1" minOccurs="0" name="BasicInform_NumObligation" type="app:tText19"/>
-          <element maxOccurs="1" minOccurs="0" name="BasicInform_BackupField1" type="app:tText25"/>
-          <element maxOccurs="1" minOccurs="0" name="BasicInform_BackupField2" type="app:tText25"/>
-          <element maxOccurs="1" minOccurs="0" name="BasicInform_BackupField3" type="app:tText25"/>
-          <element maxOccurs="1" minOccurs="0" name="BasicInform_BackupField4" type="app:tText50"/>
-          <element maxOccurs="1" minOccurs="0" name="BasicInform_Sum" type="app:tSUMMA"/>
-          <element maxOccurs="1" minOccurs="0" name="BasicInform_TotalSum" type="app:tSUMMA"/>
-          <element maxOccurs="1" minOccurs="0" name="BasicInform_CodeFounder" type="app:tText8"/>
-          <element maxOccurs="1" minOccurs="0" name="Payer_BankAcc" type="app:tText34"/>
-          <element maxOccurs="1" minOccurs="0" name="Payer_CorrAcc" type="app:tText34"/>
-          <element maxOccurs="1" minOccurs="0" name="Payer_BIK" type="app:tText9"/>
-          <element maxOccurs="1" minOccurs="0" name="Payer_BankName" type="app:tText160"/>
-          <element maxOccurs="1" minOccurs="0" name="Payer_INN" type="app:tText12"/>
-          <element maxOccurs="1" minOccurs="0" name="Payer_KPP" type="app:tText9"/>
-          <element maxOccurs="1" minOccurs="0" name="Payer_Name" type="app:tText160"/>
-          <element maxOccurs="1" minOccurs="0" name="Recip_INN" type="app:tText12"/>
-          <element maxOccurs="1" minOccurs="0" name="Recip_KPP" type="app:tText9"/>
-          <element maxOccurs="1" minOccurs="0" name="Recip_Name" type="app:tText160"/>
-          <element maxOccurs="1" minOccurs="0" name="Recip_BankAcc" type="app:tText34"/>
-          <element maxOccurs="1" minOccurs="0" name="Recip_CorrAcc" type="app:tText34"/>
-          <element maxOccurs="1" minOccurs="0" name="Recip_BIK" type="app:tText9"/>
-          <element maxOccurs="1" minOccurs="0" name="Recip_BankName" type="app:tText160"/>
-          <element maxOccurs="1" minOccurs="0" name="TechRequisitesDoc_PaymentPriority" type="app:tText1"/>
-          <element maxOccurs="1" minOccurs="0" name="TechRequisitesDoc_PaymentType" type="app:tText1"/>
-          <element maxOccurs="1" minOccurs="0" name="TechRequisitesDoc_PurposeOfPayment" type="app:tText210"/>
-          <element maxOccurs="1" minOccurs="0" name="Sign_Head_Position" type="app:tText100"/>
-          <element maxOccurs="1" minOccurs="0" name="Sign_Head_FIO" type="app:tText50"/>
-          <element maxOccurs="1" minOccurs="0" name="Sign_Head_DateSign" type="app:tDateDoc"/>
-          <element maxOccurs="1" minOccurs="0" name="Sign_Acc_Position" type="app:tText100"/>
-          <element maxOccurs="1" minOccurs="0" name="Sign_Acc_FIO" type="app:tText50"/>
-          <element maxOccurs="1" minOccurs="0" name="Sign_Acc_DateSign" type="app:tDateDoc"/>
-          <element maxOccurs="1" minOccurs="0" name="Sign_MarkTOFK_RegNum" type="app:tText15"/>
-          <element maxOccurs="1" minOccurs="0" name="Sign_MarkTOFK_RegDate" type="app:tDateDoc"/>
-          <element maxOccurs="1" minOccurs="0" name="Sign_MarkTOFK_ExecPosition" type="app:tText100"/>
-          <element maxOccurs="1" minOccurs="0" name="Sign_MarkTOFK_ExecFIO" type="app:tText50"/>
-          <element maxOccurs="1" minOccurs="0" name="Sign_MarkTOFK_ExecPhone" type="app:tText50"/>
-          <element maxOccurs="1" minOccurs="0" name="AddInformation_CodeCS" type="app:tText4"/>
-          <element maxOccurs="1" minOccurs="0" name="AddInformation_CodeRC" type="app:tText4"/>
-          <element maxOccurs="1" minOccurs="0" name="AddInformation_CSAcc" type="app:tText4"/>
-          <element maxOccurs="1" minOccurs="0" name="AddInformation_DateOper" type="app:tDateDoc"/>
-          <element maxOccurs="1" minOccurs="0" name="AddInformation_DateOfAcc" type="app:tDateDoc"/>
-          <element maxOccurs="1" minOccurs="0" name="AddInformation_DateWriteOff" type="app:tDateDoc"/>
-          <element maxOccurs="1" minOccurs="0" name="AddInformation_DateEntrTOFK" type="app:tDateTime"/>
-          <element maxOccurs="1" minOccurs="0" name="SystemInformation_TOFKCodeAdress" type="app:tText4"/>
-          <element maxOccurs="1" minOccurs="0" name="SystemInformation_Source" type="app:tDocSrcComplex"/>
-          <element maxOccurs="1" minOccurs="0" name="SystemInformation_TransferState" type="app:tTrnsfrStComplex"/>
-          <element maxOccurs="1" minOccurs="0" name="SystemInformation_protocolGuid" type="app:tText36"/>
-          <element maxOccurs="1" minOccurs="0" name="SystemInformation_protocolNum" type="app:tText15"/>
-          <element maxOccurs="1" minOccurs="0" name="SystemInformation_protocolDate" type="app:tDateDoc"/>
-          <element maxOccurs="1" minOccurs="0" name="SystemInformation_clnt_protocolGuid" type="app:tText36"/>
-          <element maxOccurs="1" minOccurs="0" name="SystemInformation_clnt_protocolNum" type="app:tText15"/>
-          <element maxOccurs="1" minOccurs="0" name="SystemInformation_clnt_protocolDate" type="app:tDateDoc"/>
-          <element maxOccurs="1" minOccurs="0" name="SystemInformation_ZOZGuid" type="app:tText36"/>
-          <element maxOccurs="1" minOccurs="0" name="SystemInformation_ZOZNum" type="app:tText15"/>
-          <element maxOccurs="1" minOccurs="0" name="SystemInformation_ZOZDate" type="app:tDateDoc"/>
-          <element maxOccurs="1" minOccurs="0" name="SystemInformation_EDIGuid" type="app:tText36"/>
-          <element maxOccurs="1" minOccurs="0" name="SystemInformation_EDINum" type="app:tText15"/>
-          <element maxOccurs="1" minOccurs="0" name="SystemInformation_EDIDate" type="app:tDateDoc"/>
-          <element maxOccurs="1" minOccurs="0" name="SystemInformation_LampGroupFK" type="app:tLampFKComplex"/>
-          <element maxOccurs="1" minOccurs="0" name="SystemInformation_LampGroupPUIO" type="app:tLampPUIOComplex"/>
-          <element maxOccurs="1" minOccurs="0" name="SystemInformation_LampGroupBank" type="app:tLampBankComplex"/>
-          <element maxOccurs="1" minOccurs="0" name="SystemInformation_clnt_LampGroupFK" type="app:tLampFKComplex"/>
-          <element maxOccurs="1" minOccurs="0" name="SystemInformation_clnt_LampGroupPUIO" type="app:tLampPUIOComplex"/>
-          <element maxOccurs="1" minOccurs="0" name="SystemInformation_clnt_LampGroupBank" type="app:tLampBankComplex"/>
-          <element maxOccurs="1" minOccurs="0" name="ListApprovalFK" type="en:tListApproval"/>
-          <element maxOccurs="1" minOccurs="0" name="ListApproval" type="en:tListApproval"/>
+          <element maxOccurs="1" minOccurs="0" name="BasicRequisites_Test" type="app:tAppSolDocTypComplex"/>
           <element maxOccurs="1" minOccurs="0" name="InfoPayment_D12" type="self:tInfoPayment_D12"/>
-          <element maxOccurs="1" minOccurs="0" name="SumPaymKBK_D12" type="self:tSumPaymKBK_D12"/>
-          <element maxOccurs="1" minOccurs="0" name="TTLPayAmount_D12" type="self:tTTLPayAmount_D12"/>
         </sequence>
       </extension>
     </complexContent>

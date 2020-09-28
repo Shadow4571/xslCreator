@@ -14,6 +14,6 @@ public class XSLAttribute {
 
     @Override
     public String toString() {
-        return "Name: " + this.Name + " | Value: " + this.Value + " ( Important: " + this.IsImportant + " )\n";
+        return "Name: " + this.Name + " Parse Name: " + this.ParseName  +" | Value: " + this.Value + " ( Important: " + this.IsImportant + " )\n";
     }
 }

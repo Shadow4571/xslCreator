@@ -1,85 +1,40 @@
 package xsd;
 
-import main.FileLoader;
-import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import xsd.types.IXSDType;
+import xsd.types.InputXSD;
+import xsd.types.OutputXSD;
 import xsl.XSLElement;
 
+import java.util.ArrayList;
+
 public class XSDFactory {
-    public Document AppliedTypesXSD;
-    public Document BaseTypesXSD;
-    public Document CommonXSD;
-    public Document EntitiesXSD;
-    public Document FormularsXSD;
-    public Document CoreSchemaXSD;
+    private IXSDType XSDFiles;
+    public boolean IsInputXSD;
 
-    public XSDFactory(String Directory) {
-        this(Directory, new String[] {"\\appliedTypes.xsd", "\\baseTypes.xsd", "\\common.xsd", "\\entities.xsd", "\\formulars.xsd", "\\xmldsig-core-schema.xsd"});
+    public XSDFactory(String Directory, boolean IsInputXSD) {
+        this(Directory, new String[] {"\\appliedTypes.xsd", "\\baseTypes.xsd", "\\common.xsd", "\\entities.xsd", "\\formulars.xsd"}, IsInputXSD);
     }
 
-    public XSDFactory(String Directory, String[] FilesNames) {
-        try {
-            this.AppliedTypesXSD = FileLoader.LoadXSDorXMLDocument(Directory + FilesNames[0]);
-            this.BaseTypesXSD = FileLoader.LoadXSDorXMLDocument(Directory + FilesNames[1]);
-            this.CommonXSD = FileLoader.LoadXSDorXMLDocument(Directory + FilesNames[2]);
-            this.EntitiesXSD = FileLoader.LoadXSDorXMLDocument(Directory + FilesNames[3]);
-            this.FormularsXSD = FileLoader.LoadXSDorXMLDocument(Directory + FilesNames[4]);
-            this.CoreSchemaXSD = FileLoader.LoadXSDorXMLDocument(Directory + FilesNames[5]);
-        } catch (Exception Exp) {
-            Exp.printStackTrace();
+    public XSDFactory(String Directory, String[] FilesNames, boolean IsInputXSD) {
+        if(IsInputXSD) {
+            this.XSDFiles = new InputXSD(Directory, FilesNames);
+        } else {
+            this.XSDFiles = new OutputXSD(Directory, FilesNames);
         }
     }
 
-    public XSLElement GetXSLElementIfHasType(NodeList ElementsInRoot, String Type, String Name) {
-        for(int i = 0; i < ElementsInRoot.getLength(); i++) {
-            Node Temp = ElementsInRoot.item(i);
+    public String GetRootName() { return this.XSDFiles.GetRootName(); }
 
-            if(Temp.getNodeType() != Node.TEXT_NODE) {
-                if(Temp.getNodeName().equalsIgnoreCase("simpleType") || Temp.getNodeName().equalsIgnoreCase("complexType")) {
-                    if(Temp.getAttributes().getNamedItem("name").getNodeValue().equalsIgnoreCase(Type)) {
-                        XSLElement Result = new XSLElement(Name);
-                        Result.Type = Type;
-                        if(Temp.getNodeName().equalsIgnoreCase("complexType")) {
-                            NodeList ResultInner = Temp.getChildNodes();
-                            for(int j = 0; j < ResultInner.getLength(); j++) {
-                                Node InnerNode = ResultInner.item(j);
+    public String GetRootType() { return this.XSDFiles.GetRootType(); }
 
-                                if(InnerNode != null)
-                                    if(InnerNode.getNodeType() != Node.TEXT_NODE)
-                                        if(InnerNode.getNodeName().equalsIgnoreCase("attribute"))
-                                            Result.AddElementAttribute(InnerNode.getAttributes().getNamedItem("name").getNodeValue(), InnerNode.getAttributes().getNamedItem("minOcurus") == null);
-                            }
-                        }
-
-                        return Result;
-                    }
-                }
-            }
-        }
-
-        return null;
+    public Node GetRootFromFormular() {
+        return this.XSDFiles.GetRootFromFormular();
     }
 
-    public XSLElement FindTypeByPrefix(String Prefix, String Type, String Name) {
-        XSLElement Result = null;
+    public XSLElement GetComplexTypeContent(String TypePrefix, String Type) { return this.XSDFiles.GetComplexTypeContent(TypePrefix, Type); }
 
-        if(Prefix.equalsIgnoreCase("app") || Prefix.equalsIgnoreCase("app:"))
-            Result = this.FindTypeInAppliedTypes(Type, Name);
-
-        if(Prefix.equalsIgnoreCase("base") || Prefix.equalsIgnoreCase("base:"))
-            Result = this.FindTypeInBaseTypes(Type, Name);
-
-        return Result;
-    }
-
-    public XSLElement FindTypeInAppliedTypes(String Type, String Name) {
-        NodeList ElementsInRoot = this.AppliedTypesXSD.getDocumentElement().getChildNodes();
-        return this.GetXSLElementIfHasType(ElementsInRoot, Type, Name);
-    }
-
-    public XSLElement FindTypeInBaseTypes(String Type, String Name) {
-        NodeList ElementsInRoot = this.BaseTypesXSD.getDocumentElement().getChildNodes();
-        return this.GetXSLElementIfHasType(ElementsInRoot, Type, Name);
-    }
+    public ArrayList<XSLElement> CreateAllRootElements() { return this.XSDFiles.CreateAllRootElements(); }
 }
