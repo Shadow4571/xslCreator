@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:cmn="http://www.roskazna.ru/eb/domain/common" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" targetNamespace="http://www.roskazna.ru/eb/domain/common">
+  <import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema.xsd"/>
+  <simpleType name="tFormularTypes">
+    <restriction base="string">
+      <enumeration value="formular"/>
+      <enumeration value="dictionary"/>
+      <enumeration value="service"/>
+    </restriction>
+  </simpleType>
+  <complexType abstract="true" name="tFormular">
+    <sequence>
+      <element minOccurs="0" name="extra-data" type="cmn:extraData"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="Signature" type="ds:SignatureType"/>
+    </sequence>
+    <attribute name="metaType" type="cmn:tFormularTypes" use="optional"/>
+  </complexType>
+  <simpleType name="tGuid">
+    <annotation>
+      <documentation>Глобальный идентификатор. http://tools.ietf.org/html/rfc4122</documentation>
+    </annotation>
+    <restriction base="string">
+      <pattern value="[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}"/>
+    </restriction>
+  </simpleType>
+  <complexType name="extraData">
+    <sequence>
+      <any maxOccurs="unbounded"/>
+    </sequence>
+  </complexType>
+</schema>
